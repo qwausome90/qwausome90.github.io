@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CALCULATOR.10YEARSOLDCREATED</title>
+</head>
+
+<body>
+    <h1>Hi! Welcome to your local calculator</h1>
+    <div>
+        <p>It is proven to always be accurate. (Let me tell you a secret..... It was tested by a real programer (My father)) </p>
+        <p>The reason it says a real programer is because i am not considered a real programer yet. I am a "Soon to be young programer in training" as they say</p>
+        <H1>ADDING</H1>
+        <input type="number" id="leftAddInput"></input>+
+        <input type="number" id="rightAddInput"></input>
+        <button type="button" onclick="add()">=</button>
+        <label id="addResult">0</label>
+    </div>
+    <div>
+        <h1>SUBTRACTING</h1>
+    <input type="number" id="leftSubtractInput"></input>-
+    <input type="number" id="rightSubtractInput"></input>
+    <button type="button" onclick="subtract()">=</button>
+    <label id="subtractResult">0</label>
+</div>
+<div>
+    <h1>MULTIPLYING</h1>
+<input type="number" id="leftMultiplyInput"></input>*
+<input type="number" id="rightMultiplyInput"></input>
+<button type="button" onclick="Multiply()">=</button>
+<label id="MultiplyResult">0</label>
+</div>
+<div>
+    <h1>DIVIDING</h1>
+<input type="number" id="leftDivideInput"></input>/
+<input type="number" id="rightDivideInput"></input>
+<button type="button" onclick="Divide()">=</button>
+<label id="DivideResult">0</label>
+</div>
+<p>The reason i named this CALCULATOR.10YEARSOLDCREATED is because 1.I like to do caps, 2.Its a calculator, 3.I made it (created it) when i was only 10 and a half (in grade 5)</p>
+    <script>
+function add() {
+  let leftAdd=  document.getElementById("leftAddInput").valueAsNumber;
+  let rightAdd= document.getElementById("rightAddInput").valueAsNumber;
+  let resultLabel= document.getElementById("addResult");
+  resultLabel.innerText =leftAdd+rightAdd;
+}
+function subtract() {
+  let leftSubtract=  document.getElementById("leftSubtractInput").valueAsNumber;
+  let rightSubtract= document.getElementById("rightSubtractInput").valueAsNumber;
+  let resultLabel= document.getElementById("subtractResult");
+  resultLabel.innerText =leftSubtract-rightSubtract;
+}
+function Multiply() {
+  let leftMultiply=  document.getElementById("leftMultiplyInput").valueAsNumber;
+  let rightMultiply= document.getElementById("rightMultiplyInput").valueAsNumber;
+  let resultLabel= document.getElementById("MultiplyResult");
+  resultLabel.innerText =leftMultiply*rightMultiply;
+}
+function Divide() {
+  let leftDivide=  document.getElementById("leftDivideInput").valueAsNumber;
+  let rightDivide= document.getElementById("rightDivideInput").valueAsNumber;
+  let resultLabel= document.getElementById("DivideResult");
+  resultLabel.innerText =leftDivide/rightDivide;
+}   </script>
+</body>
+
+</html>
